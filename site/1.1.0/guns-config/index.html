@@ -1,0 +1,1234 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../../images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.7">
+    
+    
+      
+        <title>Config - ModularWarfare</title>
+      
+    
+    
+
+      <link rel="stylesheet" href="../../assets/stylesheets/main.cb6bc1d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.39b8e14a.min.css">
+        
+      
+    
+<link rel="stylesheet" href="../../css/lightgallery.min.css">
+
+    
+
+<script src="../../js/lightgallery.min.js"></script>
+
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=:300,400,400i,700%7CGravityBold&display=fallback">
+        <style>body,input{font-family:"",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"GravityBold",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../stylesheet/extra_stylesheet.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#guns-config-files-json" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../.." title="ModularWarfare" class="md-header-nav__button md-logo" aria-label="ModularWarfare">
+      
+  <img src="../../images/geckolib_webtitle.png" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+
+
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+    <a id="discord_icon_box" href="https://discord.gg/aYv8AFtEhZ" title="ModularWarfare" class="md-header-nav__button md-logo" aria-label="ModularWarfare">
+      <img id="discord_icon" src="http://5.135.103.173/docs/images/discord_logo.png" alt="logo">
+    </a>
+
+    <a id="curseforge_icon_box" href="https://www.curseforge.com/minecraft/mc-mods/modularwarfare" title="ModularWarfare" class="md-header-nav__button md-logo" aria-label="ModularWarfare">
+      <img id="curseforge_icon" src="http://5.135.103.173/docs/images/curseforge_icon.png" alt="logo">
+    </a>
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+
+
+
+<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+      
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs md-tabs--active">
+        Home
+      </a>
+    </li>
+  
+
+      
+      
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../" class="md-tabs md-tabs--active">
+        1.1.0 Documentation
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+
+<div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+  <div class="md-sidebar__scrollwrap">
+    <div class="md-sidebar__inner">
+      
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="ModularWarfare" class="md-nav__button md-logo" aria-label="ModularWarfare">
+      
+  <img src="../../images/geckolib_webtitle.png" alt="logo">
+
+    </a>
+    ModularWarfare
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1">
+    
+    <label class="md-nav__link" for="nav-1">
+      Home
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Home" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        <span class="md-nav__icon md-icon"></span>
+        Home
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../.." class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      1.1.0 Documentation
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="1.1.0 Documentation" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        1.1.0 Documentation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../" class="md-nav__link">
+      Installation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2">
+    
+    <label class="md-nav__link" for="nav-2-2">
+      General informations
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="General informations" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-2">
+        <span class="md-nav__icon md-icon"></span>
+        General informations
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../config/" class="md-nav__link">
+      Config file
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../content-packs/" class="md-nav__link">
+      Content packs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../types/" class="md-nav__link">
+      Content types
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-3" type="checkbox" id="nav-2-3" checked>
+    
+    <label class="md-nav__link" for="nav-2-3">
+      Guns
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Guns" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-3">
+        <span class="md-nav__icon md-icon"></span>
+        Guns
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Config
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      Config
+    </a>
+    
+      
+    
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../guns-model/" class="md-nav__link">
+      Model
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../guns-render/" class="md-nav__link">
+      Render
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-4" type="checkbox" id="nav-2-4">
+    
+    <label class="md-nav__link" for="nav-2-4">
+      Attachments
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Attachments" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-4">
+        <span class="md-nav__icon md-icon"></span>
+        Attachments
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../attachments-config/" class="md-nav__link">
+      Config
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../attachments-model/" class="md-nav__link">
+      Model
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../attachments-render.md" class="md-nav__link">
+      Render (soon)
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-5" type="checkbox" id="nav-2-5">
+    
+    <label class="md-nav__link" for="nav-2-5">
+      Ammos/Magazines
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Ammos/Magazines" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-5">
+        <span class="md-nav__icon md-icon"></span>
+        Ammos/Magazines
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../ammos-config.md" class="md-nav__link">
+      Config (soon)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../ammos-render.md" class="md-nav__link">
+      Render (soon)
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-6" type="checkbox" id="nav-2-6">
+    
+    <label class="md-nav__link" for="nav-2-6">
+      Bullets
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Bullets" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-6">
+        <span class="md-nav__icon md-icon"></span>
+        Bullets
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../bullets-config.md" class="md-nav__link">
+      Config (soon)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../bullets-render.md" class="md-nav__link">
+      Render (soon)
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-7" type="checkbox" id="nav-2-7">
+    
+    <label class="md-nav__link" for="nav-2-7">
+      Armors
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Armors" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-7">
+        <span class="md-nav__icon md-icon"></span>
+        Armors
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../armors-config.md" class="md-nav__link">
+      Config (soon)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../armors-model/" class="md-nav__link">
+      Model
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../armors-render.md" class="md-nav__link">
+      Render (soon)
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-8" type="checkbox" id="nav-2-8">
+    
+    <label class="md-nav__link" for="nav-2-8">
+      Backpacks
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Backpacks" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-8">
+        <span class="md-nav__icon md-icon"></span>
+        Backpacks
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../armors-config.md" class="md-nav__link">
+      Config (soon)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../armors-model/" class="md-nav__link">
+      Model (soon)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../armors-render.md" class="md-nav__link">
+      Render (soon)
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-9" type="checkbox" id="nav-2-9">
+    
+    <label class="md-nav__link" for="nav-2-9">
+      Skin sprays
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Skin sprays" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-9">
+        <span class="md-nav__icon md-icon"></span>
+        Skin sprays
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../sprays-config.md" class="md-nav__link">
+      Config (soon)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../sprays-model.md" class="md-nav__link">
+      Texture (soon)
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+
+    </div>
+  </div>
+</div>
+
+
+
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="guns-config-files-json">Guns config files (.json)</h1>
+<h2 id="starting-with-an-example">Starting with an example</h2>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="nt">&quot;internalName&quot;</span><span class="p">:</span><span class="s2">&quot;prototype.ak47&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;displayName&quot;</span><span class="p">:</span><span class="s2">&quot;AKM&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;weaponType&quot;</span><span class="p">:</span><span class="s2">&quot;carbine&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;extraLore&quot;</span><span class="p">:</span> <span class="s2">&quot;The true legend AK47&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;customFlashTexture&quot;</span><span class="p">:</span><span class="s2">&quot;prototype.advanced.flash&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;gunDamage&quot;</span><span class="p">:</span><span class="mi">9</span><span class="p">,</span>
+    <span class="nt">&quot;gunDamageHeadshotBonus&quot;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span>
+    <span class="nt">&quot;roundsPerMin&quot;</span><span class="p">:</span><span class="mi">350</span><span class="p">,</span>
+    <span class="nt">&quot;allowEmptyMagazines&quot;</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;recoilPitch&quot;</span><span class="p">:</span> <span class="mf">5.5</span><span class="p">,</span>
+    <span class="nt">&quot;recoilYaw&quot;</span><span class="p">:</span><span class="mf">0.75</span><span class="p">,</span>
+    <span class="nt">&quot;randomRecoilPitch&quot;</span><span class="p">:</span> <span class="mf">0.0</span><span class="p">,</span>
+    <span class="nt">&quot;randomRecoilYaw&quot;</span><span class="p">:</span> <span class="mf">0.7</span><span class="p">,</span>
+    <span class="nt">&quot;bulletSpread&quot;</span><span class="p">:</span><span class="mf">1.0</span><span class="p">,</span>
+    <span class="nt">&quot;accuracySneakFactor&quot;</span><span class="p">:</span><span class="mf">0.5</span><span class="p">,</span>
+    <span class="nt">&quot;moveSpeedModifier&quot;</span><span class="p">:</span><span class="mf">1.0</span><span class="p">,</span>
+    <span class="nt">&quot;allowSprintFiring&quot;</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;fireModes&quot;</span><span class="p">:[</span>
+        <span class="s2">&quot;full&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;semi&quot;</span>
+    <span class="p">],</span>
+    <span class="nt">&quot;acceptedAmmo&quot;</span><span class="p">:[</span>
+        <span class="s2">&quot;prototype.ak47ammo&quot;</span>
+    <span class="p">],</span>
+    <span class="nt">&quot;dropBulletCasing&quot;</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;shellEjectOffsetNormal&quot;</span><span class="p">:{</span>
+        <span class="nt">&quot;x&quot;</span><span class="p">:</span><span class="mf">-1.0</span><span class="p">,</span>
+        <span class="nt">&quot;y&quot;</span><span class="p">:</span><span class="mf">0.0</span><span class="p">,</span>
+        <span class="nt">&quot;z&quot;</span><span class="p">:</span><span class="mf">1.0</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;shellEjectOffsetAiming&quot;</span><span class="p">:{</span>
+        <span class="nt">&quot;x&quot;</span><span class="p">:</span><span class="mf">-0.2</span><span class="p">,</span>
+        <span class="nt">&quot;y&quot;</span><span class="p">:</span><span class="mf">0.12</span><span class="p">,</span>
+        <span class="nt">&quot;z&quot;</span><span class="p">:</span><span class="mf">0.5</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;weaponSoundMap&quot;</span><span class="p">:{</span>
+        <span class="nt">&quot;weaponFire&quot;</span><span class="p">:[</span>
+            <span class="p">{</span>
+                <span class="nt">&quot;soundEvent&quot;</span><span class="p">:</span><span class="s2">&quot;weaponFire&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;soundName&quot;</span><span class="p">:</span><span class="s2">&quot;prototype.ak47.shoot&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;soundNameDistant&quot;</span><span class="p">:</span><span class="s2">&quot;prototype.ak47.shoot.distant&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;soundRange&quot;</span><span class="p">:</span><span class="mi">64</span><span class="p">,</span>
+                <span class="nt">&quot;soundMaxRange&quot;</span><span class="p">:</span><span class="mi">96</span><span class="p">,</span>
+                <span class="nt">&quot;soundFadeMultiplier&quot;</span><span class="p">:</span><span class="mi">1</span>
+            <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;weaponUnload&quot;</span><span class="p">:[</span>
+            <span class="p">{</span>
+                <span class="nt">&quot;soundEvent&quot;</span><span class="p">:</span><span class="s2">&quot;weaponReload&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;soundName&quot;</span><span class="p">:</span><span class="s2">&quot;prototype.generic.reload&quot;</span>
+            <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;weaponFireSuppressed&quot;</span><span class="p">:[</span>
+            <span class="p">{</span>
+                <span class="nt">&quot;soundEvent&quot;</span><span class="p">:</span><span class="s2">&quot;weaponFireSuppressed&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;soundName&quot;</span><span class="p">:</span><span class="s2">&quot;prototype.ak47.shoot.sup&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;soundRange&quot;</span><span class="p">:</span><span class="mi">30</span><span class="p">,</span>
+                <span class="nt">&quot;soundMaxRange&quot;</span><span class="p">:</span><span class="mi">50</span><span class="p">,</span>
+                <span class="nt">&quot;soundFadeMultiplier&quot;</span><span class="p">:</span><span class="mi">1</span>
+            <span class="p">}</span>
+        <span class="p">]</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;acceptedAttachments&quot;</span><span class="p">:{</span>
+        <span class="nt">&quot;barrel&quot;</span><span class="p">:[</span>
+            <span class="s2">&quot;prototype.ak47_suppressor&quot;</span>
+        <span class="p">]</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;modelSkins&quot;</span><span class="p">:[</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;internalName&quot;</span><span class="p">:</span><span class="s2">&quot;prototype.ak47&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;skinAsset&quot;</span><span class="p">:</span><span class="s2">&quot;prototype.ak47&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;displayName&quot;</span><span class="p">:</span><span class="s2">&quot;Default&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;internalName&quot;</span><span class="p">:</span><span class="s2">&quot;prototype.ak47.urban&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;skinAsset&quot;</span><span class="p">:</span><span class="s2">&quot;prototype.ak47.urban&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;displayName&quot;</span><span class="p">:</span><span class="s2">&quot;Urban&quot;</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="default-basetype-configuration">Default BaseType configuration</h2>
+<div class="highlight"><pre><span></span><code>    <span class="cm">/**</span>
+<span class="cm">     * The internal name of your gun (important, it is recommended to name it &#39;contentpack-name.yourgunname&#39;)</span>
+<span class="cm">     */</span>
+    <span class="n">String</span> <span class="n">internalName</span>
+
+    <span class="cm">/**</span>
+<span class="cm">     * Max stack size</span>
+<span class="cm">     */</span>
+    <span class="n">Integer</span> <span class="n">maxStackSize</span>
+    <span class="cm">/**</span>
+<span class="cm">     * Weapon staticModel skins/textures</span>
+<span class="cm">     */</span>
+    <span class="n">SkinType</span><span class="o">[]</span> <span class="n">modelSkins</span>
+    <span class="cm">/**</span>
+<span class="cm">     * Used to generate .lang files automatically</span>
+<span class="cm">     */</span>
+    <span class="n">String</span> <span class="n">displayName</span>
+    <span class="n">String</span> <span class="n">iconName</span>
+</code></pre></div>
+<h2 id="gun-stats">Gun stats</h2>
+<div class="highlight"><pre><span></span><code>    <span class="cm">/**</span>
+<span class="cm">     * Weapon Classification for later use with default animations etc</span>
+<span class="cm">     */</span>
+    <span class="n">WeaponType</span> <span class="n">weaponType</span>
+</code></pre></div>
+<p>Possible values (String): <code>custom</code>, <code>pistol</code>, <code>mp</code>, <code>smg</code>, <code>carabine</code>, <code>rifle</code>, <code>ar</code>, <code>dmr</code>, <code>semisniper</code>, <code>boltsniper</code>, <code>shotgun</code></p>
+<div class="highlight"><pre><span></span><code>    <span class="cm">/**</span>
+<span class="cm">     * The firing modes of the gun. SEMI, FULL, BURST</span>
+<span class="cm">     */</span>
+    <span class="n">WeaponFireMode</span><span class="o">[]</span> <span class="n">fireModes</span>
+</code></pre></div>
+<p>Possible values (String): <code>SEMI</code>, <code>FULL</code>, <code>BURST</code></p>
+<div class="highlight"><pre><span></span><code>    <span class="cm">/**</span>
+<span class="cm">     * Damage inflicted per bullet. Multiplied by the bullet damage value.</span>
+<span class="cm">     */</span>
+    <span class="kt">float</span> <span class="n">gunDamage</span>
+</code></pre></div>
+<p>Recommended values (Float): <code>10.0</code> <code>= 5 hearts per hit</code></p>
+<div class="highlight"><pre><span></span><code>    <span class="cm">/**</span>
+<span class="cm">     * Bonus damage inflicted per bullet when headshot.</span>
+<span class="cm">     */</span>
+    <span class="kd">public</span> <span class="kt">float</span> <span class="n">gunDamageHeadshotBonus</span>
+</code></pre></div>
+<p>Recommended values (Float): <code>2.0</code> <code>= 1 heart damage bonus</code></p>
+<div class="highlight"><pre><span></span><code>    <span class="cm">/**</span>
+<span class="cm">     * The amount that bullets spread out when fired from this gun</span>
+<span class="cm">     */</span>
+    <span class="kt">float</span> <span class="n">bulletSpread</span>
+</code></pre></div>
+<p>Recommended values (Float): <code>1.0</code> to <code>2.5</code></p>
+<div class="highlight"><pre><span></span><code>    <span class="cm">/**</span>
+<span class="cm">     * The fire rate of the gun in RPM, 700 = MAX</span>
+<span class="cm">     */</span>
+    <span class="kt">int</span> <span class="n">roundsPerMin</span>
+</code></pre></div>
+<p>Recommended values (Float): <code>300</code> - <code>500</code></p>
+<p>Extra info: <code>If your gun is semi-automatic like a shotgun, pistol you can lower this value to 100 - 250</code></p>
+<div class="highlight"><pre><span></span><code>    <span class="cm">/**</span>
+<span class="cm">     * The number of bullets to fire per burst in burst mode</span>
+<span class="cm">     */</span>
+    <span class="kt">int</span> <span class="n">numBurstRounds</span> <span class="o">=</span> <span class="mi">3</span>
+</code></pre></div>
+<h2 id="gun-recoil-accuracy-mechanic">Gun recoil / accuracy mechanic</h2>
+<div class="highlight"><pre><span></span><code>    <span class="cm">/**</span>
+<span class="cm">     * Base value for Upwards cursor/view recoil</span>
+<span class="cm">     */</span>
+    <span class="kt">float</span> <span class="n">recoilPitch</span> <span class="o">=</span> <span class="mf">10.0</span>
+
+    <span class="cm">/**</span>
+<span class="cm">     * Base value for Left/Right cursor/view recoil</span>
+<span class="cm">     */</span>
+    <span class="kt">float</span> <span class="n">recoilYaw</span> <span class="o">=</span> <span class="mf">1.0</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>    <span class="cm">/**</span>
+<span class="cm">     * Random factor of the pitch recoil</span>
+<span class="cm">     */</span>
+    <span class="kt">float</span> <span class="n">randomRecoilPitch</span> <span class="o">=</span> <span class="mf">0.5</span>
+
+    <span class="cm">/**</span>
+<span class="cm">     * Random factor of the yaw recoil</span>
+<span class="cm">     */</span>
+    <span class="kt">float</span> <span class="n">randomRecoilYaw</span> <span class="o">=</span> <span class="mf">0.5</span>
+</code></pre></div>
+<p>Recommended values (Float): <code>0.0</code> - <code>1.0</code></p>
+<div class="highlight"><pre><span></span><code>    <span class="cm">/**</span>
+<span class="cm">     * Factor of accuracy when sneaking</span>
+<span class="cm">     */</span>
+    <span class="kt">float</span> <span class="n">accuracySneakFactor</span> <span class="o">=</span> <span class="mf">0.75</span>
+</code></pre></div>
+<p>Recommended values (Float): <code>0.0</code> - <code>1.0</code></p>
+<div class="highlight"><pre><span></span><code>    <span class="cm">/**</span>
+<span class="cm">     * Factor of the recoil when aiming</span>
+<span class="cm">     */</span>
+    <span class="kt">float</span> <span class="n">recoilAimReducer</span> <span class="o">=</span> <span class="mf">0.7F</span><span class="p">;</span>
+</code></pre></div>
+<p>Recommended values (Float): <code>0.0</code> - <code>1.0</code></p>
+<h2 id="ammos-magazines">Ammos / Magazines</h2>
+<div class="highlight"><pre><span></span><code>    <span class="cm">/**</span>
+<span class="cm">     * Ammo types which can be used in the gun</span>
+<span class="cm">     */</span>
+    <span class="n">String</span><span class="o">[]</span> <span class="n">acceptedAmmo</span><span class="p">;</span>
+</code></pre></div>
+<ul>
+<li>
+<p>Examples:</p>
+<p>With only one compatible mag:
+<div class="highlight"><pre><span></span><code>    <span class="nt">&quot;acceptedAmmo&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;prototype.ak74uammo&quot;</span><span class="p">],</span>
+</code></pre></div></p>
+<p>With multiples compatible mags:
+<div class="highlight"><pre><span></span><code>    <span class="nt">&quot;acceptedAmmo&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;prototype.ak74uammo&quot;</span><span class="p">,</span> <span class="s2">&quot;prototype.ak74ufastmag&quot;</span><span class="p">],</span>
+</code></pre></div></p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code>    <span class="cm">/**</span>
+<span class="cm">     * If true &amp;&amp; != null, ammo moddel will be set by ammo type used. Used built-in ammo model by default</span>
+<span class="cm">     */</span>
+    <span class="kt">boolean</span> <span class="n">dynamicAmmo</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+</code></pre></div>
+<p>Extra info: <code>Set this to true if you want to render your custom ammo/magazine model on your gun when charged with it.</code></p>
+<div class="highlight"><pre><span></span><code>    <span class="cm">/**</span>
+<span class="cm">     * The bullets internalName that is compatible with this gun</span>
+<span class="cm">     */</span>
+    <span class="n">String</span><span class="o">[]</span> <span class="n">acceptedBullets</span>
+</code></pre></div>
+<p>Extra info: <code>Can be useful for shotguns, to load gauge shell instead of magazines.</code></p>
+<h2 id="reload">Reload</h2>
+<div class="highlight"><pre><span></span><code>    <span class="cm">/**</span>
+<span class="cm">     * The time (in ticks) it takes to reload this gun</span>
+<span class="cm">     */</span>
+    <span class="kt">int</span> <span class="n">reloadTime</span> <span class="o">=</span> <span class="mi">40</span><span class="p">;</span>
+</code></pre></div>
+<p>Recommended values (Integer): <code>40</code></p>
+<h2 id="gun-attachments">Gun attachments</h2>
+<div class="highlight"><pre><span></span><code>    <span class="cm">/**</span>
+<span class="cm">     * Attachment Types</span>
+<span class="cm">     */</span>
+    <span class="n">HashMap</span> <span class="n">acceptedAttachments</span>
+</code></pre></div>
+<ul>
+<li>
+<p>Examples:</p>
+<div class="highlight"><pre><span></span><code>    <span class="nt">&quot;acceptedAttachments&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;barrel&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="err">//Your</span> <span class="err">a</span><span class="kc">tta</span><span class="err">chme</span><span class="kc">nt</span> <span class="kc">t</span><span class="err">ype</span>
+            <span class="s2">&quot;prototype.ak47_suppressor&quot;</span><span class="p">,</span> <span class="err">//Your</span> <span class="kc">f</span><span class="err">irs</span><span class="kc">t</span> <span class="err">a</span><span class="kc">tta</span><span class="err">chme</span><span class="kc">nt</span> <span class="err">i</span><span class="kc">nternal</span><span class="err">Name</span>
+            <span class="s2">&quot;prototype.ak47_flashhider&quot;</span> <span class="err">//Your</span> <span class="err">seco</span><span class="kc">n</span><span class="err">d</span> <span class="err">a</span><span class="kc">tta</span><span class="err">chme</span><span class="kc">nt</span> <span class="err">i</span><span class="kc">nternal</span><span class="err">Name</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;sight&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;prototype.obzor_sight&quot;</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;flashlight&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;prototype.ak74u_flashlight&quot;</span>
+        <span class="p">]</span>
+    <span class="p">}</span>
+</code></pre></div>
+<p>Attachments types name: <code>sight</code>, <code>slide</code>, <code>grip</code>, <code>flashlight</code>, <code>charm</code>, <code>skin</code>, <code>barrel</code></p>
+<p>And add the internal name of the attachment compatible with your gun.</p>
+</li>
+</ul>
+<h2 id="gun-movements">Gun movements</h2>
+<div class="highlight"><pre><span></span><code>    <span class="cm">/**</span>
+<span class="cm">     * Allow to shoot when sprinting</span>
+<span class="cm">     */</span>
+    <span class="kt">boolean</span> <span class="n">allowSprintFiring</span> <span class="o">=</span> <span class="kc">true</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>    <span class="cm">/**</span>
+<span class="cm">     * Speed modifier when a player has a gun in their hand (0.0 - 1.0)</span>
+<span class="cm">     */</span>
+    <span class="kt">float</span> <span class="n">moveSpeedModifier</span> <span class="o">=</span> <span class="mf">1.0</span>
+</code></pre></div>
+<p>Extra info: <code>Setting this parameter to 1.0 will not reduce the speed of the player</code></p>
+<h2 id="gun-shell-casings">Gun shell casings</h2>
+<div class="highlight"><pre><span></span><code><span class="err">//The</span> <span class="err">posi</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span> <span class="err">where</span> <span class="kc">t</span><span class="err">he</span> <span class="err">shell</span> <span class="err">casi</span><span class="kc">n</span><span class="err">gs</span> <span class="err">will</span> <span class="err">spaw</span><span class="kc">n</span><span class="p">,</span> <span class="err">do</span> <span class="kc">n</span><span class="err">o</span><span class="kc">t</span> <span class="kc">t</span><span class="err">ouch</span>
+<span class="nt">&quot;shellEjectOffsetNormal&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;x&quot;</span><span class="p">:</span> <span class="mf">-1.0</span><span class="p">,</span>
+    <span class="nt">&quot;y&quot;</span><span class="p">:</span> <span class="mf">0.0</span><span class="p">,</span>
+    <span class="nt">&quot;z&quot;</span><span class="p">:</span> <span class="mf">1.0</span>
+<span class="p">},</span>
+<span class="nt">&quot;shellEjectOffsetAiming&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;x&quot;</span><span class="p">:</span> <span class="mf">-0.2</span><span class="p">,</span>
+    <span class="nt">&quot;y&quot;</span><span class="p">:</span> <span class="mf">0.12</span><span class="p">,</span>
+    <span class="nt">&quot;z&quot;</span><span class="p">:</span> <span class="mf">0.5</span>
+<span class="p">},</span>
+</code></pre></div>
+<h2 id="gun-sounds">Gun sounds</h2>
+<div class="highlight"><pre><span></span><code>    <span class="cm">/**</span>
+<span class="cm">     * The sound json list of your gun</span>
+<span class="cm">     */</span>
+    <span class="n">HashMap</span> <span class="n">weaponSoundMap</span>
+</code></pre></div>
+<ul>
+<li>
+<p>Examples:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">&quot;weaponSoundMap&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;weaponFire&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;soundEvent&quot;</span><span class="p">:</span> <span class="s2">&quot;weaponFire&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;soundName&quot;</span><span class="p">:</span> <span class="s2">&quot;prototype.ak47.shoot&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;soundNameDistant&quot;</span><span class="p">:</span> <span class="s2">&quot;prototype.ak47.shoot.distant&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;soundRange&quot;</span><span class="p">:</span> <span class="mi">64</span><span class="p">,</span>
+            <span class="nt">&quot;soundMaxRange&quot;</span><span class="p">:</span> <span class="mi">96</span><span class="p">,</span>
+            <span class="nt">&quot;soundFadeMultiplier&quot;</span><span class="p">:</span> <span class="mi">1</span>
+        <span class="p">}</span>
+    <span class="p">],</span>
+    <span class="nt">&quot;weaponUnload&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;soundEvent&quot;</span><span class="p">:</span> <span class="s2">&quot;weaponReload&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;soundName&quot;</span><span class="p">:</span> <span class="s2">&quot;prototype.generic.reload&quot;</span>
+        <span class="p">}</span>
+    <span class="p">],</span>
+    <span class="nt">&quot;weaponFireSuppressed&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;soundEvent&quot;</span><span class="p">:</span> <span class="s2">&quot;weaponFireSuppressed&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;soundName&quot;</span><span class="p">:</span> <span class="s2">&quot;prototype.ak47.shoot.sup&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;soundRange&quot;</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span>
+            <span class="nt">&quot;soundMaxRange&quot;</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span>
+            <span class="nt">&quot;soundFadeMultiplier&quot;</span><span class="p">:</span> <span class="mi">1</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">},</span>
+</code></pre></div>
+<p>WeaponSoundType list:</p>
+<ul>
+<li>
+<p>weaponDryFire : The sound played upon dry firing</p>
+</li>
+<li>
+<p>weaponFire: The sound played upon shooting</p>
+</li>
+<li>
+<p>weaponFireSuppressed: The sound played upon shooting with a silencer</p>
+</li>
+<li>
+<p>weaponFireLast: The sound to play upon shooting on last round</p>
+</li>
+<li>
+<p>weaponReload: The sound to play upon reloading</p>
+</li>
+<li>
+<p>weaponBolt: The sound to play when touching the bolt action</p>
+</li>
+<li>
+<p>weaponBulletLoad: The sound to play upon load bullet</p>
+</li>
+<li>
+<p>weaponLoad: The sound to play upon loading</p>
+</li>
+<li>
+<p>weaponUnload: The sound to play upon unloading</p>
+</li>
+<li>
+<p>weaponReloadEmpty: The sound to play upon reloading when empty</p>
+</li>
+<li>
+<p>weaponCharge: The sound to play upon charging (ex: shotgun)</p>
+</li>
+<li>
+<p>weaponModeSwitch: The sound to play upon switching fire modes</p>
+</li>
+</ul>
+<p>The soundName the name of your sound located in <code>assets/modularwarfare/sounds.json</code></p>
+</li>
+</ul>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../types/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Content types
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../guns-model/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Model
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+
+      <script src="../../assets/javascripts/vendor.53cc9318.min.js"></script>
+      <script src="../../assets/javascripts/bundle.e9c9f54f.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: ['navigation.tabs', 'navigation.expand'],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.9c0e82ba.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+<script>
+  var elements = document.getElementsByClassName("lightgallery");
+  for(var i=0; i<elements.length; i++) {
+    lightGallery(elements[i]);
+  }
+</script>
+
+  </body>
+</html>

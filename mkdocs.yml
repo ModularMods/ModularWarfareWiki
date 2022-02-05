@@ -1,0 +1,69 @@
+site_name: ModularWarfare
+
+# If you add a page, you must add it to the index here
+nav:
+  - Home:
+    - Home: 'index.md'
+  - 1.1.0 Documentation:
+    - Installation: '1.1.0/index.md'
+    - General informations:
+      - Config file: '1.1.0/config.md'
+      - Content packs: '1.1.0/content-packs.md'
+      - Content types: '1.1.0/types.md'
+    - Guns:
+      - Config: '1.1.0/guns-config.md'
+      - Model: '1.1.0/guns-model.md'
+      - Render: '1.1.0/guns-render.md'
+    - Attachments:
+      - Config: '1.1.0/attachments-config.md'
+      - Model: '1.1.0/attachments-model.md'
+      - Render (soon): '1.1.0/attachments-render.md'
+    - Ammos/Magazines:
+      - Config (soon): '1.1.0/ammos-config.md'
+      - Render (soon): '1.1.0/ammos-render.md'
+    - Bullets: 
+      - Config (soon): '1.1.0/bullets-config.md'
+      - Render (soon): '1.1.0/bullets-render.md'
+    - Armors:
+      - Config (soon): '1.1.0/armors-config.md'
+      - Model: '1.1.0/armors-model.md'
+      - Render (soon): '1.1.0/armors-render.md'
+    - Backpacks:
+      - Config (soon): '1.1.0/armors-config.md'
+      - Model (soon): '1.1.0/armors-model.md'
+      - Render (soon): '1.1.0/armors-render.md'
+    - Skin sprays:
+      - Config (soon): '1.1.0/sprays-config.md'
+      - Texture (soon): '1.1.0/sprays-model.md'
+
+plugins:
+  - macros
+  - search
+
+theme:
+  name: material
+  font:
+      code: GravityBold
+  favicon: 'images/favicon.png'
+  logo: 'images/geckolib_webtitle.png'
+  custom_dir: theme/material/overrides
+  features:
+    - navigation.tabs
+    - navigation.expand
+
+extra_css:
+  - 'stylesheet/extra_stylesheet.css'
+
+markdown_extensions:
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed
+  - pymdownx.superfences
+  - pymdownx.details
+  - admonition
+  - pymdownx.keys
+  - lightgallery
+  - codehilite:
+      guess_lang: false
+      use_pygments: true
+      linenums: true
+  - attr_list
